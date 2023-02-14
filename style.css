@@ -1,5 +1,41 @@
-﻿body {
+﻿* {
+    font-family: Roboto, Arial;
+    margin: 0px;
+}
+
+body {
     background: linear-gradient(to right, white, grey);
+}
+
+.whole-site {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-section {
+    background-color: lightblue;
+    width: 200px;
+}
+
+.right-section {
+    background-color: lightcoral;
+    flex: 1;
+}
+
+.top-section {
+    background-color: lightcyan;
+    flex: 1;
+}
+
+.bottom-section {
+    background-color: lightgreen;
+    height: 600px;
 }
 
 h1 {
@@ -11,6 +47,8 @@ h1 {
 
 p {
     font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .bottomOfPage {
@@ -19,4 +57,13 @@ p {
     color: sandybrown;
     font-size: 40px;
     height: 60px;
+}
+
+.game-flexbox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
