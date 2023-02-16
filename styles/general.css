@@ -1,0 +1,96 @@
+* {
+    font-family: Roboto, Arial;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.break-site-into-two {
+    background-color: rgb(220,220,220);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.body-section-start {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    color: white;
+    font-size: 15vw;
+    font-weight: 900;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("../images/lewy.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+}
+
+.about-me-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 196, 196);
+    height: 50vh;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(180,180,180);
+    height: 120px;
+    padding: 10px 200px 10px 200px;
+}
+
+
+
+
+
+/*animated scroll arrow*/
+
+.arrow {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(0deg);
+}
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-60px, -60px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+}
+

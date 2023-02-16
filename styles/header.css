@@ -1,0 +1,48 @@
+.top-hud-section {
+    background-color: rgba(170, 255, 255, 0.6);
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    z-index: 1;
+}
+
+.hud-logo {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin-right: 10px;
+    margin-left: 4%;
+    min-width: 0;
+    font-family: Dosis;
+    font-size: 26px;
+    font-weight: 600;
+    font-variant: small-caps;
+}
+
+.hud-right-section {
+    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: space-between;
+    flex-shrink: 0;
+    vertical-align: middle;
+    margin-right: 3%;
+}
+
+.hud-buttons {
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: 22px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
