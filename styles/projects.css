@@ -78,18 +78,18 @@
 
 @media (max-width: 1000px) {
     .projects-done-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
 @media (min-width: 1001px) and (max-width: 1399px) {
     .projects-done-grid {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (min-width: 1400px) {
     .projects-done-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

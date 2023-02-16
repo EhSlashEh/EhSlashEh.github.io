@@ -7,21 +7,20 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 70px;
+    height: 4em;
     z-index: 1;
 }
 
 .hud-logo {
     display: flex;
-    width: 200px;
     align-items: center;
     justify-content: space-between;
     flex-shrink: 0;
-    margin-right: 10px;
+    margin-right: 1em;
     margin-left: 4%;
     min-width: 0;
     font-family: Dosis;
-    font-size: 26px;
+    font-size: 2em;
     font-weight: 600;
     font-variant: small-caps;
 }
@@ -30,7 +29,7 @@
     display: inline-flex;
     display: flex;
     flex-direction: row;
-    width: 400px;
+    width: 25em;
     justify-content: space-between;
     flex-shrink: 0;
     vertical-align: middle;
@@ -40,9 +39,9 @@
 .hud-buttons {
     cursor: pointer;
     margin-top: auto;
-    margin-bottom: 22px;
+    margin-bottom: 1.4em;
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 600;
 }
