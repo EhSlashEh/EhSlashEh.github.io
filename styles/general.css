@@ -42,8 +42,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgb(180,180,180);
-    height: 120px;
-    padding: 10px 200px 10px 200px;
+    height: 8em;
+    padding: 1em 12em 1em 12em;
 }
 
 
@@ -63,10 +63,10 @@
     display: block;
     width: 1.5vw;
     height: 1.5vw;
-    border-bottom: 5px solid white;
-    border-right: 5px solid white;
+    border-bottom: 0.4em solid white;
+    border-right: 0.4em solid white;
     transform: rotate(45deg);
-    margin: -10px;
+    margin: -1em;
     animation: animate 2s infinite;
 }
 
@@ -81,7 +81,7 @@
 @keyframes animate {
     0% {
         opacity: 0;
-        transform: rotate(45deg) translate(-60px, -60px);
+        transform: rotate(45deg) translate(-4em, -4em);
     }
 
     50% {
@@ -90,7 +90,7 @@
 
     100% {
         opacity: 0;
-        transform: rotate(45deg) translate(-20px, -20px);
+        transform: rotate(45deg) translate(-1em, -1em);
     }
 }
 
