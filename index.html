@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Anthony's Website</title>
+
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/projects.css" />
 
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,27 +19,29 @@
 </head>
 <body id="top-of-page">
 
-
-    <header class="top-hud-section">
-        <div class="hud-logo">
-            Anthony-Alan Burns
-        </div>
-        <div class="hud-right-section">
-            <a class="hud-buttons" href="#top-of-page">
-                Home
-            </a>
-            <a class="hud-buttons" href="#about-me">
-                About Me
-            </a>
-            <a class="hud-buttons" href="#projects-done">
-                Projects
-            </a>
-            <a class="hud-buttons" href="#contact-section">
-                Contact
-            </a>
+    <header>
+        <div id="brand"><a href="#top-of-page">Anthony-Alan Burns</a></div>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a> </li>
+                <li><a href="#projects-done">Projects</a> </li>
+                <li><a href="#Blog-section">Blog</a> </li>
+                <li><a href="#contact-section">Contact</a> </li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="#about-me">About Me</a> </li>
+                <li><a href="#projects-done">Projects</a> </li>
+                <li><a href="#Blog-section">Blog</a> </li>
+                <li><a href="#contact-section">Contact</a> </li>
+            </ul>
         </div>
     </header>
-
+    <script src="index.js"></script>
 
 
     <div class="body-section-start">

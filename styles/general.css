@@ -1,9 +1,8 @@
 * {
-    font-family: Roboto, Arial;
+    font-family: "Roboto", Arial;
     font-size: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     box-sizing: border-box;
 }
 
@@ -34,7 +33,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 196, 196);
+    background-color: rgb(140, 140, 140);
+    border: 90px 2px 90px 2px;
+    border: solid green;
     height: 50vh;
 }
 
@@ -63,10 +64,10 @@
 }
 .arrow span {
     display: block;
-    width: 1.5vw;
-    height: 1.5vw;
-    border-bottom: 0.4em solid white;
-    border-right: 0.4em solid white;
+    width: 20px;
+    height: 20px;
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
     transform: rotate(45deg);
     margin: -1em;
     animation: animate 2s infinite;
@@ -83,7 +84,7 @@
 @keyframes animate {
     0% {
         opacity: 0;
-        transform: rotate(45deg) translate(-4em, -4em);
+        transform: rotate(45deg) translate(-60px, -60px);
     }
 
     50% {
@@ -92,7 +93,7 @@
 
     100% {
         opacity: 0;
-        transform: rotate(45deg) translate(-1em, -1em);
+        transform: rotate(45deg) translate(-10px, -10px);
     }
 }
 
