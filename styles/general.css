@@ -19,7 +19,7 @@
     align-items: center;
     height: 100vh;
     justify-content: center;
-    color: white;
+    color: rgb(248,240,251);
     font-size: 15vw;
     font-weight: 900;
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("../images/lewy.JPG");
@@ -33,20 +33,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(140, 140, 140);
-    border: 90px 2px 90px 2px;
-    border: solid green;
+    background-color: rgb(202,213,202);
     height: 50vh;
 }
 
 .contact-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(180,180,180);
-    height: 8em;
-    padding: 1em 12em 1em 12em;
+    background-color: rgb(33,26,29);
+    color: rgb(248,240,251);
+    height: 10vh;
+    padding: 2px 2px 2px 2px;
 }
 
 

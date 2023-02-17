@@ -1,5 +1,5 @@
 .projects-done-section {
-    background-color: rgb(255, 252, 196);
+    background-color: rgb(99, 32, 238);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -7,10 +7,12 @@
 }
 
 .projects-intro {
-    padding: 30px;
+    padding: 20px;
     border: dashed;
     text-align: center;
     border-width: 0;
+    font-size: 4em;
+    font-weight: 600;
 }
 
 .projects-done-grid {
@@ -19,8 +21,6 @@
     column-gap: 0.5em;
     row-gap: 1em;
     flex: 1;
-    border: dashed;
-    border-width: 0.1em;
     padding: 2em;
 }
 
@@ -31,6 +31,7 @@
     display: grid;
     grid-template-rows: 1fr 2fr;
     height: 36em;
+    background-color: rgb(128,117,255);
 }
 
 .project-img-row {

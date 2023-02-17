@@ -20,15 +20,16 @@ header {
 }
 
 #brand {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 18px;
     display: flex;
     align-items: center;
+    color: rgb(248,240,251);
 }
 
-#brand a {
-    color: seagreen;
-}
+    #brand a {
+        color: rgb(248,240,251);
+    }
 
 ul {
     list-style: none;
@@ -39,7 +40,7 @@ ul {
 }
 
 ul a {
-    color: white;
+    color: rgb(248,240,251);
 }
 
 ul li {
@@ -61,7 +62,7 @@ ul li:hover {
 #hamburger-icon div {
     width: 35px;
     height: 3px;
-    background-color: white;
+    background-color: rgb(248,240,251);
     margin: 6px 0;
     transition: 0.4s;
 }
