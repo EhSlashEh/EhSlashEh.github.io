@@ -31,10 +31,32 @@
 
 .about-me-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: rgb(202,213,202);
-    height: 50vh;
+    border: 20px 0 20px 0;
+    border: groove;
+    border-color: rgb(128, 128, 128, 0.2);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 1vw;
+}
+
+.about-me-intro {
+    position: absolute;
+    transform: translate(0, -2.5em);
+    font-size: 5em;
+}
+
+.about-me-picture img {
+    width: 300px;
+    border: 15px groove rgb(128, 128, 128, 0.2);
+    border-radius: 50%;
+}
+
+.about-me-text {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .contact-section {
@@ -58,8 +80,6 @@
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    transform: rotate(0deg);
 }
 .arrow span {
     display: block;

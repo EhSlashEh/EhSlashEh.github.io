@@ -10,17 +10,20 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/projects.css" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/ehslasheh-logo.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Roboto:wght@400;700&family=Zeyada&display=swap" rel="stylesheet">
 
 </head>
 <body id="top-of-page">
 
     <header>
-        <div id="brand"><a href="#top-of-page">Anthony-Alan Burns</a></div>
+        <div class="logo-and-name">
+            <div id="brand-name"><a href="#top-of-page"><img class="brand-logo" src="./images/ehslasheh-logo.png" /></a></div>
+            <div id="brand-name"><a href="#top-of-page">Anthony-Alan Burns</a></div>
+        </div>
         <nav>
             <ul>
                 <li><a href="#about-me">About Me</a> </li>
@@ -44,65 +47,70 @@
     <script src="index.js"></script>
 
 
+
     <div class="body-section-start">
         Welcome
     </div>
-    <div class="arrow">
+    <a class="arrow" href="#about-me">
         <span></span>
-    </div>
+    </a>
 
 
 
-    <div id="about-me" class="about-me-section">
-        <p>
-            Hey, my name is Anthony-Alan Burns, but you can just call me Anthony!
-            <br />
-            <br />
-            Yeah, that's about it...
-        </p>
-    </div>
     
-    <div class="projects-done-section" id="projects-done" >
+    <div id="about-me">
+        <div class="about-me-section">
+            <div class="about-me-intro" style="font-family: Zeyada">
+                - About Me -
+            </div>
+            <div class="about-me-picture">
+                <img src="./images/anthony-smile.png" />
+            </div>
+            <div class="about-me-text">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                <br />
+                <br />
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+        </div>
+    </div>
 
-        <div class="projects-intro">
-            - Projects I have worked on -
+
+
+    <div class="projects-done-section" id="projects-done">
+
+        <div class="projects-intro" style="font-family: Zeyada">
+            - Projects -
         </div>
 
         <div class="projects-done-grid">
-
             <div class="project-preview">
-
-
                 <a class="project-img-row" href="https://ehslasheh.itch.io/color-runner">
                     <img class="project-img" src="./images/project1.png" />
                 </a>
-
                 <div class="project-info-grid">
                     <p class="project-title">
                         Color Runner
                     </p>
                     <p class="project-description">
-                        An endless runner game made in Unity. Check it out <a href="https://ehslasheh.itch.io/color-runner" style="font-weight: 600" target="_blank">Here</a>.
+                        An endless runner game made in Unity. Check it out <a href="https://ehslasheh.itch.io/color-runner" target="_blank">Here</a>.
                         You can even play it in your browser!
                     </p>
                     <p class="project-time">
                         2 months &#183; 2023
                     </p>
                 </div>
-
-
             </div>
-
             <div class="project-preview">
                 <div class="project-img-row">
-                    <img class="project-img" src="./images/tba.jfif" />
+                    <img class="project-img" src="./images/ehslasheh-logo.png" style="object-fit: contain" />
                 </div>
                 <div class="project-info-grid">
                     <p class="project-title">
-                        Bumper Knockoff
+                        Portfolio Website
                     </p>
                     <p class="project-description">
-                        A unity game where you knock off your friends. Can be played online with friends here!
+                        Created a website on github using HTML, CSS, and JS.
                     </p>
                     <p class="project-time">
                         2 months &#183; 2023
@@ -112,31 +120,34 @@
 
             <div class="project-preview">
                 <div class="project-img-row">
-                    <img class="project-img" src="./images/tba.jfif" />
+                    <img class="project-img" src="./images/cad-design.png" />
                 </div>
                 <div class="project-info-grid">
                     <p class="project-title">
-                        Supply Chain project
+                        Enclosure Design
                     </p>
                     <p class="project-description">
-                        Completed a big supply chain project using Gurobi.
+                        Designed enclosures for printed circuit boards. I created the desings using OnShape,
+                        and printed them for protoypting using 3D printing.
                     </p>
                     <p class="project-time">
-                        1 month &#183; 2020
+                        4 month &#183; 2019
                     </p>
                 </div>
             </div>
 
             <div class="project-preview">
                 <div class="project-img-row">
-                    <img class="project-img" src="./images/tba.jfif" />
+                    <img class="project-img" src="./images/powerapps.jpg" style="object-fit: contain" />
                 </div>
                 <div class="project-info-grid">
                     <p class="project-title">
-                        Color Runner
+                        Raw Material Inventory app
                     </p>
                     <p class="project-description">
-                        An endless runner game made in Unity.
+                        Using Excel, I kept track of inventory levels of raw materials, and relayed
+                        this data through PowerApps to create a mobile app that displayed inventory levels
+                        with functionality to submit requests to order more.
                     </p>
                     <p class="project-time">
                         2 months &#183; 2023
@@ -146,44 +157,29 @@
 
             <div class="project-preview">
                 <div class="project-img-row">
-                    <img class="project-img" src="./images/tba.jfif" />
+                    <img class="project-img" src="./images/imp.png" style="object-fit: contain"/>
                 </div>
                 <div class="project-info-grid">
                     <p class="project-title">
-                        This website
+                        Industrial Engineering Capstone Project
                     </p>
                     <p class="project-description">
-                        Created a portfolio using html and css.
-                    </p>
-                    <p class="project-time">
-                        1 month &#183; 2023
-                    </p>
-                </div>
-            </div>
-
-            <div class="project-preview">
-                <div class="project-img-row">
-                    <img class="project-img" src="./images/tba.jfif" />
-                </div>
-                <div class="project-info-grid">
-                    <p class="project-title">
-                        Project in Industry with IMP
-                    </p>
-                    <p class="project-description">
-                        Did an offical report on empolyee sceduling. Created an app with PowerBI.
+                        Working alongside IMP
                     </p>
                     <p class="project-time">
                         8 months &#183; 2020-2021
                     </p>
                 </div>
             </div>
-
         </div>
 
     </div>
 
 
     <div id="contact-section" class="contact-section">
+        <div>
+            FAQ
+        </div>
         <div>
             Linkedin
         </div>

@@ -1,18 +1,17 @@
 .projects-done-section {
-    background-color: rgb(99, 32, 238);
     text-align: center;
     display: flex;
     flex-direction: column;
     flex: 3;
+    background-color: rgb(128,117,255);
 }
 
 .projects-intro {
-    padding: 20px;
     border: dashed;
+    padding-top: 30px;
     text-align: center;
     border-width: 0;
-    font-size: 4em;
-    font-weight: 600;
+    font-size: 5em;
 }
 
 .projects-done-grid {
@@ -25,13 +24,14 @@
 }
 
 .project-preview {
-    border: solid;
+    border: groove;
     border-width: 0.3em;
+    border-color: rgba(160,160,160,0.5);
     margin: 1em;
     display: grid;
     grid-template-rows: 1fr 2fr;
-    height: 36em;
-    background-color: rgb(128,117,255);
+    padding: 0.4em;
+    background-color: rgb(99, 32, 238);
 }
 
 .project-img-row {
@@ -46,15 +46,25 @@
     height: 19em;
     width: 100%;
     object-position: center;
+    background-color: white;
+    border-style: groove;
+    border-color: rgba(120,120,120,0.5);
 }
 
 .project-info-grid {
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
-    border: solid;
-    border-width: 0.1em;
-    padding: 0.4em;
+    margin-top: 1em;
+    padding: 0;
     text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+
+.project-info-grid a {
+    text-decoration: none;
+    color: rgb(202,213,202);
+    font-weight: 600;
 }
 
 .project-title {
@@ -68,7 +78,6 @@
 }
 
 .project-time {
-    color: gray;
     font-size: 1em;
     padding: 10px 0;
 }

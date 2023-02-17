@@ -5,7 +5,7 @@ header a {
 header {
     padding: 0 20px;
     background-color: rgb(40,40,40);
-    height: 50px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -19,17 +19,31 @@ header {
     height: 200px;
 }
 
-#brand {
+.logo-and-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.6em;
+
+}
+
+#brand-name {
     font-weight: 600;
     font-size: 18px;
     display: flex;
     align-items: center;
     color: rgb(248,240,251);
+    padding-right: 8px;
 }
 
-    #brand a {
-        color: rgb(248,240,251);
-    }
+#brand-name a {
+    color: rgb(248,240,251);
+}
 
 ul {
     list-style: none;
