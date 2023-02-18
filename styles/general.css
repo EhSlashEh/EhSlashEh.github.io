@@ -17,7 +17,7 @@
 .body-section-start {
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh + 60px);
     justify-content: center;
     color: rgb(248,240,251);
     font-size: 15vw;
@@ -31,20 +31,28 @@
 
 .about-me-section {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(202,213,202);
     border: 20px 0 20px 0;
     border: groove;
     border-color: rgb(128, 128, 128, 0.2);
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-bottom: 150px;
     padding-left: 1vw;
+    margin-top: -60px; /* negative margin equal to header height */
+    padding-top: 60px; /* add padding to compensate for negative margin */
+}
+
+.about-me-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .about-me-intro {
-    position: absolute;
-    transform: translate(0, -2.5em);
     font-size: 5em;
 }
 
@@ -57,6 +65,7 @@
 .about-me-text {
     margin-left: 20px;
     margin-right: 20px;
+    justify-content: center;
 }
 
 .contact-section {

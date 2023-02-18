@@ -2,13 +2,13 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    flex: 3;
     background-color: rgb(128,117,255);
+    margin-top: -60px; /* negative margin equal to header height */
+    padding-top: 60px; /* add padding to compensate for negative margin */
 }
 
 .projects-intro {
     border: dashed;
-    padding-top: 30px;
     text-align: center;
     border-width: 0;
     font-size: 5em;
@@ -32,6 +32,7 @@
     grid-template-rows: 1fr 2fr;
     padding: 0.4em;
     background-color: rgb(99, 32, 238);
+    height: 500px;
 }
 
 .project-img-row {
@@ -52,13 +53,14 @@
 }
 
 .project-info-grid {
-    display: grid;
-    grid-template-rows: 1fr 4fr 1fr;
-    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
     padding: 0;
     text-align: center;
-    color: white;
+    color: #F8F0FB;
     font-size: 1.2em;
+    position: relative;
 }
 
 .project-info-grid a {
@@ -70,16 +72,15 @@
 .project-title {
     font-size: 1.5em;
     font-weight: 600;
-}
-
-.project-description, .project-time {
-    border: dotted;
-    border-width: 0;
+    margin-bottom: 10px;
 }
 
 .project-time {
     font-size: 1em;
-    padding: 10px 0;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
