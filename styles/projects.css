@@ -32,7 +32,7 @@
     grid-template-rows: 1fr 2fr;
     padding: 0.4em;
     background-color: rgb(99, 32, 238);
-    height: 500px;
+    height: 700px;
 }
 
 .project-img-row {
@@ -61,6 +61,7 @@
     color: #F8F0FB;
     font-size: 1.2em;
     position: relative;
+    height: contain;
 }
 
 .project-info-grid a {
@@ -87,13 +88,13 @@
 
 /* projects resize based on screen width */
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     .projects-done-grid {
         grid-template-columns: 1fr;
     }
 }
 
-@media (min-width: 1001px) and (max-width: 1399px) {
+@media (min-width: 701px) and (max-width: 1399px) {
     .projects-done-grid {
         grid-template-columns: 1fr 1fr;
     }

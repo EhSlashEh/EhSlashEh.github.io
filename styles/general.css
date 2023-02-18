@@ -29,6 +29,9 @@
     background-position-y: top;
 }
 
+
+
+
 .about-me-section {
     display: flex;
     flex-direction: column;
@@ -44,6 +47,10 @@
     padding-top: 60px; /* add padding to compensate for negative margin */
 }
 
+.about-me-intro {
+    font-size: 5em;
+}
+
 .about-me-content {
     display: flex;
     flex-direction: row;
@@ -52,21 +59,38 @@
     margin-right: 10px;
 }
 
-.about-me-intro {
-    font-size: 5em;
-}
-
 .about-me-picture img {
     width: 300px;
     border: 15px groove rgb(128, 128, 128, 0.2);
     border-radius: 50%;
+    margin-right: 10px;
+    order: 1;
 }
 
 .about-me-text {
     margin-left: 20px;
     margin-right: 20px;
     justify-content: center;
+    order: 2;
 }
+
+/* media query for small screens */
+@media (max-width: 600px) {
+    .about-me-content {
+        flex-direction: column;
+    }
+
+    .about-me-picture {
+        order: 1;
+        margin-bottom: 10px;
+    }
+
+    .about-me-text {
+        order: 2;
+    }
+}
+
+
 
 .contact-section {
     display: flex;
