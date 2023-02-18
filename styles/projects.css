@@ -11,7 +11,7 @@
     border: dashed;
     text-align: center;
     border-width: 0;
-    font-size: 5em;
+    font-size: 8vh;
 }
 
 .projects-done-grid {
@@ -34,6 +34,7 @@
     background-color: rgb(99, 32, 238);
     overflow: auto; /* or visible */
     white-space: normal; /* or nowrap */
+    color: #F8F0FB;
 }
 
 .project-img-row {
@@ -65,23 +66,26 @@
     justify-content: space-between;
     align-items: center;
     min-height: 200px;
-    color: white;
 }
 
 .project-title {
-    margin: 2px;
+    margin-top: 10px;
     font-weight: 600;
     font-size: 1.5em;
 }
 
 .project-description {
     text-align: start;
-    margin: 12px;
+    margin: 12px 6px 14px 6px;
     font-size: 1.1em;
 }
 
 .project-time {
     margin-top:auto;
+}
+
+.project-more-to-come {
+
 }
 
 
