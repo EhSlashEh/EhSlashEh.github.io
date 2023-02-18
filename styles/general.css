@@ -30,8 +30,6 @@
 }
 
 
-
-
 .about-me-section {
     display: flex;
     flex-direction: column;
@@ -48,7 +46,7 @@
 }
 
 .about-me-intro {
-    font-size: 5em;
+    font-size: 5vh;
 }
 
 .about-me-content {
