@@ -25,20 +25,20 @@
     <meta http-equiv="Expires" content="0" />
 
 </head>
-<body id="top-of-page">
+<body>
 
 
     <header id="myHeader">
 
 
-        <div class="logo-and-name">
-            <div id="brand-name">
-                <a href="#top-of-page">
-                    <img class="brand-logo" src="./images/ehslasheh-logo.png" />
-                </a>
+        <a class="logo-and-name" href="#">
+            <div class="header-logo">
+                <img src="./images/ehslasheh-logo.png" />
             </div>
-            <div id="brand-name"><a href="#top-of-page">Anthony-Alan Burns</a></div>
-        </div>
+            <div class="header-name">
+                Anthony-Alan Burns
+            </div>
+        </a>
 
         <!-- Desktop list -->
         <nav>
@@ -51,18 +51,33 @@
         </nav>
 
         <!-- Mobile list -->
-        <div class="hamburger-menu" id="hamburger-icon" onclick="toggleMobileMenu(this); changeHeight();">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile-menu">
-                <li><a href="#about-me">About Me</a> </li>
-                <li><a href="#projects-done">Projects</a> </li>
-                <li><a href="#Blog-section">Blog</a> </li>
-                <li><a href="#contact-section">Contact</a> </li>
-            </ul>
-        </div>
+        <button class="hamburger-menu"><img src="./images/hamburger-icon.png" /></button>
 
+        <ul class="header-list-mobile">
+            <li><a href="#about-me">About Me</a> </li>
+            <li><a href="#projects-done">Projects</a> </li>
+            <li><a href="#Blog-section">Blog</a> </li>
+            <li><a href="#contact-section">Contact</a> </li>
+        </ul>
+
+
+
+
+
+
+        <!--
+    <div class="hamburger-menu" id="hamburger-icon" onclick="toggleMobileMenu(this); changeHeight();">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+            <li><a href="#about-me">About Me</a> </li>
+            <li><a href="#projects-done">Projects</a> </li>
+            <li><a href="#Blog-section">Blog</a> </li>
+            <li><a href="#contact-section">Contact</a> </li>
+        </ul>
+    </div>
+        -->
 
     </header>
 
@@ -129,8 +144,8 @@
             </div>
 
             <div class="project-preview">
-                <a class="project-img-row" href="#top-of-page">
-                    <img class="project-img" src="./images/ehslasheh-logo.png" style="object-fit: contain" />
+                <a class="project-img-row" href="#">
+                    <img class="project-img" src="./images/ehslasheh-logo-white.png" style="object-fit: contain" />
                 </a>
                 <div class="project-info-grid">
                     <p class="project-title">
@@ -138,23 +153,6 @@
                     </p>
                     <p class="project-description">
                         Developed a website using HTML, CSS, and JavaScript.
-                    </p>
-                    <p class="project-time">
-                        2023
-                    </p>
-                </div>
-            </div>
-
-            <div class="project-preview">
-                <a class="project-img-row" href="https://github.com/EhSlashEh" target="_blank">
-                    <img class="project-img" src="./images/github.png" style="object-fit: contain; background-color: #0d1117;" />
-                </a>
-                <div class="project-info-grid">
-                    <p class="project-title">
-                        Github Project Management
-                    </p>
-                    <p class="project-description">
-                        Using Github to manage various projects I am working on.
                     </p>
                     <p class="project-time">
                         2023
@@ -214,13 +212,10 @@
                         2019
                     </p>
                 </div>
-            </div>
+            </div>         
 
-            <div class="project-more-to-come">
-                <a class="project-preview" href="https://github.com/users/EhSlashEh/projects/2/views/4" target="_blank">
-                    More to come!
-                </a>
-            </div>
+
+
         </div>
     </div>
 

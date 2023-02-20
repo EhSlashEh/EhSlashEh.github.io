@@ -5,6 +5,9 @@
     background-color: rgb(128,117,255);
     margin-top: -60px; /* negative margin equal to header height */
     padding-top: 60px; /* add padding to compensate for negative margin */
+    border-color: #F8F0FB;
+    border-width: 14px;
+    border-style: solid;
 }
 
 .projects-intro {

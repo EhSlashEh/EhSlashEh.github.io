@@ -37,14 +37,14 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(202,213,202);
-    border: 20px 0 20px 0;
-    border: groove;
-    border-color: rgb(128, 128, 128, 0.2);
     padding-top: 60px; /* add padding to compensate for negative margin */
     padding-bottom: 160px;
     padding-left: 2vw;
     padding-right: 2vw;
     margin-top: -60px; /* negative margin equal to header height */
+    border-color: #F8F0FB;
+    border-width: 14px;
+    border-style: solid;
 }
 
 .about-me-intro {
