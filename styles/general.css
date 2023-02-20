@@ -60,12 +60,16 @@
     margin-right: 10px;
 }
 
+.about-me-picture {
+}
+
 .about-me-picture img {
     width: 300px;
     border: 15px groove rgb(128, 128, 128, 0.2);
     border-radius: 50%;
     margin-right: 10px;
     order: 1;
+    object-fit: cover;
 }
 
 .about-me-text {
@@ -93,7 +97,6 @@
 }
 
 
-
 .contact-section {
     display: flex;
     flex-direction: row;
@@ -103,6 +106,7 @@
     color: rgb(248,240,251);
     height: 10vh;
     padding: 2px 2px 2px 2px;
+    font-size: 1em;
 }
 
 

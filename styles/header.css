@@ -70,16 +70,15 @@ ul li {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     position: fixed;
-    top: 78px;
-    left: 200px;
-    right: 200px;
+    top: 77px;
+    left: 10vw;
+    right: 10vw;
     list-style: none;
     border-left: groove 5px rgb(80, 80, 80, 0.2);
     border-right: groove 5px rgb(80, 80, 80, 0.2);
     border-bottom: groove 5px rgb(80, 80, 80, 0.2);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: -40px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
 }
 
 @media only screen and (max-width: 700px) {
