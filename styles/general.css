@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: rgb(202,213,202);
+}
+
 h1 {
     font-size: 4.3em;
     font-family: Zeyada;
@@ -115,6 +119,28 @@ h1 {
 }
 
 .skills-section-intro {
+}
+
+.skills-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 20px 20px 20px;
+    gap: 10px;
+}
+
+.skills-content-card {
+    border: 1px dashed black;
+    border-radius: 5px;
+    background-color: navajowhite;
+    flex-shrink: 0;
+    flex: 1 1 30%;
+    font-size: calc(10px + 1.5vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 /* Contact me */
