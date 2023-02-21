@@ -205,6 +205,10 @@
         <h1 class="skills-section-intro">
             - Skills -
         </h1>
+
+        <p>
+            none lol
+        </p>
     </section>
 
     <!-- Contact -->
@@ -216,22 +220,11 @@
             - Contact -
         </h1>
 
-        <form class="contact-form" action="https://fabform.io/f/RvmHAP8" method="post">
-            <input type="text" placeholder="Enter your name" required />
-            <label for="email">
-                <input type="email" placeholder="Enter your email" required />
-            </label>
-            <input type="text" placeholder="Enter your subject" required />
-            <textarea rows="8" placeholder="Message" required></textarea>
+        <form action="https://fabform.io/f/RvmHAP8" method="post" class="contact-form">
+            <input name="name" type="text" placeholder="Name" required />
+            <input name="email" type="email" placeholder="Email" required>
+            <textarea name="message" rows="8" placeholder="Message" required></textarea>
             <button type="submit" class="contact-submit-button">Send Message</button>
-        </form>
-
-        That didnt work... try this
-
-        <form action="https://fabform.io/f/RvmHAP8" method="post">
-            <label for="email">Your Email</label>
-            <input name="email" type="email">
-            <button type="submit">Submit</button>
         </form>
 
     </section>
@@ -246,12 +239,11 @@
         <a href="https://www.linkedin.com/in/anthonyburns/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
         </a>
-        <div>
+        <div style="font-size: 0.8em;">
             FAQ
         </div>
 
     </section>
-
 
 
     <script src="https://kit.fontawesome.com/d144bb87de.js" crossorigin="anonymous"></script>
