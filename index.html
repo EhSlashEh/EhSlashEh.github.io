@@ -45,6 +45,7 @@
             <ul class="header-list">
                 <li><a href="#about-me">About Me</a> </li>
                 <li><a href="#projects-done">Projects</a> </li>
+                <li><a href="#skills-section">Skills</a> </li>
                 <li><a href="#contact-section">Contact</a> </li>
             </ul>
         </nav>
@@ -55,6 +56,7 @@
         <ul class="header-list-mobile">
             <li><a href="#about-me">About Me</a> </li>
             <li><a href="#projects-done">Projects</a> </li>
+            <li><a href="#skills-section">Skills</a> </li>
             <li><a href="#contact-section">Contact</a> </li>
         </ul>
 
@@ -73,13 +75,15 @@
 
 
     <!-- About Me section -->
-    <section class="about-me-section">
+    <section class="about-me-section" id="about-me">
         <h1 class="about-me-intro" style="font-family: Zeyada">
             - About Me -
         </h1>
         <div class="about-me-content">
-            <div class="about-me-picture">
-                <img src="./images/anthony-smile.png" />
+            <div class="about-me-image-container">
+                <div class="about-me-picture">
+                    <img src="./images/anthony-smile.png" />
+                </div>
             </div>
             <div class="about-me-text">
                 <p>
@@ -104,6 +108,7 @@
         <h1 class="projects-intro" style="font-family: Zeyada">
             - Projects -
         </h1>
+        <h2>Click the picture for more info!</h2>
         <div class="projects-done-grid">
             <div class="project-preview">
                 <a class="project-img-row" href="https://ehslasheh.itch.io/color-runner" target="_blank">
@@ -198,7 +203,7 @@
 
     <!-- Skills -->
 
-    <section class="skills-section">
+    <section class="skills-section" id="skills-section">
 
         <h1 class="skills-section-intro">
             - Skills -
@@ -257,7 +262,7 @@
         <form action="https://fabform.io/f/RvmHAP8" method="post" class="contact-form">
             <input name="name" type="text" placeholder="Name" required />
             <input name="email" type="email" placeholder="Email" required>
-            <textarea name="message" rows="8" placeholder="Message" required></textarea>
+            <textarea name="message" placeholder="Message" required></textarea>
             <button type="submit" class="contact-submit-button">Send Message</button>
         </form>
 
