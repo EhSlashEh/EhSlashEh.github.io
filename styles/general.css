@@ -7,6 +7,12 @@
     scroll-behavior: smooth;
 }
 
+h1 {
+    font-size: 4.5em;
+    font-family: Zeyada;
+    font-weight: 600;
+}
+
 .break-site-into-two {
     background-color: rgb(220,220,220);
     width: 100%;
@@ -30,7 +36,6 @@
     background-position-y: top;
 }
 
-
 .about-me-section {
     display: flex;
     flex-direction: column;
@@ -48,8 +53,6 @@
 }
 
 .about-me-intro {
-    font-size: 8vh;
-    margin-bottom: -24px;
 }
 
 .about-me-content {
@@ -96,6 +99,58 @@
     }
 }
 
+.contact-section {
+    border-color: #F8F0FB;
+    border-width: 14px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(202,213,202);
+    padding-top: 40px;
+}
+
+.contact-section-intro {
+    text-align: center;
+}
+
+.contact-form {
+    margin: 0 auto;
+    max-width: 420px;
+    border: 6px groove rgba(33,26,29, 0.6);
+    margin-bottom: 22px;
+    padding: 16px;
+    background-color: #F8F0FB;
+    border-radius: 22px;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 16px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.contact-submit-button {
+    background-color: rgb(99, 32, 238);
+    border: 1px solid black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 100%;
+}
+
+    .contact-submit-button:hover {
+        background-color: rgb(30, 12, 140);
+        color: white;
+    }
+
+
 
 .footer-section {
     display: flex;
@@ -105,8 +160,9 @@
     background-color: rgb(33,26,29);
     color: rgb(248,240,251);
     height: 10vh;
-    padding: 2px 2px 2px 2px;
+    padding: 2px;
     font-size: 1em;
+    z-index: 2;
 }
 
 
@@ -127,7 +183,7 @@
     border-right: 4px solid white;
     transform: rotate(45deg);
     margin: -1em;
-    animation: animate 2s infinite;
+    animation: animate1 2s infinite;
 }
 .arrow span:nth-child(2) {
     animation-delay: -0.2s;
@@ -135,7 +191,7 @@
 .arrow span:nth-child(3) {
     animation-delay: -0.4s;
 }
-@keyframes animate {
+@keyframes animate1 {
     0% {
         opacity: 0;
         transform: rotate(45deg) translate(-60px, -60px);
@@ -147,4 +203,4 @@
         opacity: 0;
         transform: rotate(45deg) translate(-10px, -10px);
     }
-}
+} 
