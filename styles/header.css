@@ -1,5 +1,5 @@
 header {
-    background-color: rgb(40,40,40);
+    background-color: var(--color2);
     color: black;
     padding: 12px;
     width: 100%;
@@ -18,7 +18,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: rgb(248,240,251);
+    color: white;
 }
 
 .logo-and-name {
@@ -50,21 +50,29 @@ ul li {
     font-size: 1.1em;
 }
 
+ul li:hover {
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
+
 .hamburger-menu {
-    background-color: transparent;
+    background-color: white;
     cursor: pointer;
     margin-right: 20px;
-    border: none;
-    height: 53px;
-    width: 54px;
+    border: 1.5px solid var(--color5);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
     .active, .hamburger-menu:hover {
         background-color: #555;
+        border-radius: 20%;
     }
 
 .header-list-mobile {
-    background-color: rgb(40,40,40);
+    background-color: var(--color2);
     padding: 0;
     max-height: 0;
     overflow: hidden;
