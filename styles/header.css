@@ -78,9 +78,9 @@ ul li:hover {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     position: fixed;
-    top: 77px;
-    left: 10vw;
-    right: 10vw;
+    top: 76px;
+    left: 12vw;
+    right: 12vw;
     list-style: none;
     border-left: groove 5px rgb(80, 80, 80, 0.2);
     border-right: groove 5px rgb(80, 80, 80, 0.2);
