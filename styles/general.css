@@ -27,11 +27,23 @@ h1 {
     text-align: center;
     color: var(--color-black);
     padding-bottom: 16px;
+    text-shadow: 0 0 8px #fff, 0 0 16px #fff, 0 0 24px #fff, 0 0 32px #6DDEE0, 0 0 40px #6DDEE0, 0 0 48px #6DDEE0; /* set the text shadow */
+    animation: neon-animation 1.5s ease-in-out infinite alternate; /* animate the glow effect */
 }
 
 @media (max-width: 600px) {
     h1 {
         font-size: 10vw;
+    }
+}
+
+@keyframes neon-animation {
+    from {
+        text-shadow: 0 0 8px #fff, 0 0 16px #fff, 0 0 24px #fff, 0 0 32px #6DDEE0, 0 0 40px #6DDEE0, 0 0 48px #6DDEE0; /* set the text shadow */
+    }
+
+    to {
+        text-shadow: 0 0 16px #fff, 0 0 24px #fff, 0 0 32px #fff, 0 0 40px #6DDEE0, 0 0 48px #6DDEE0, 0 0 56px #6DDEE0;
     }
 }
 
@@ -43,7 +55,8 @@ h2 {
 
 section {
     border: solid var(--color-black);
-    border-width: 6px 12px;
+    border-width: 1vw 2vw;
+    border-radius: 50px;
 }
 
 /* Welcome */
@@ -126,7 +139,7 @@ section {
 .about-me-text {
     justify-content: center;
     order: 2;
-    font-size: 1.2em;
+    font-size: 1.3em;
     background-color: rgba(255, 255, 255, 0.7);
     border: 4px groove black;
     border-radius: 8px;
@@ -148,13 +161,84 @@ section {
     }
 }
 
+/* Experience */
+.experience-done-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color1);
+    padding-top: 60px; /* add padding to compensate for header */
+    align-content: center;
+    padding-bottom: 40px;
+}
+
+.experience-intro {
+}
+
+.experience-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.experience-preview {
+    border: 5px groove var(--color-black);
+    border-radius: 5px;
+    margin: 1em;
+    padding: 0.4em;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 400px;
+}
+
+.experience-img-container {
+    display: flex;
+    height: 200px;
+    background-color: white;
+    align-items: center;
+    border: 4px groove rgba(128, 128, 128, 0.5);
+}
+
+.experience-img-container img {
+    width: 100%;
+    align-self: center;
+}
+
+a .experience-img:hover {
+    transform: scale(1.015);
+    transition-duration: 0.12s;
+}
+
+.experience-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 230px;
+}
+
+.experience-title {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.experience-description {
+    text-align: start;
+    margin: 12px 6px 14px 6px;
+    font-size: 1.1em;
+}
+
+.experience-time {
+    margin-top: auto;
+}
 
 /* Projects */
 .projects-done-section {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: var(--color1);
+    background-color: var(--color2);
     padding-top: 60px; /* add padding to compensate for header */
 }
 
@@ -254,7 +338,7 @@ a .project-img:hover {
 
 /* Skills */
 .skills-section {
-    background-color: var(--color2);
+    background-color: var(--color1);
     display: flex;
     flex-direction: column;
     padding: 40px 0;
@@ -287,7 +371,7 @@ a .project-img:hover {
 
 /* Contact me */
 .contact-section {
-    background-color: var(--color1);
+    background-color: var(--color2);
     display: flex;
     flex-direction: column;
     padding: 40px 0;
@@ -372,21 +456,21 @@ a .project-img:hover {
 /* Footer */
 .footer-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--color-black);
     color: white;
     height: 8vh;
-    padding: 2px;
+    padding: 50px;
     font-size: 1.6em;
     z-index: 2;
     border: 0;
-
 }
 
     .footer-section i {
         color: rgb(248,240,251);
+        padding: 0 30px;
     }
 
     .footer-section a {
@@ -394,6 +478,10 @@ a .project-img:hover {
         color: rgb(248,240,251);
     }
 
+.footer-links {
+    flex-direction: column;
+    padding: 20px;
+}
 .footer-icon-resume {
     position: relative;
     display: inline-block;
