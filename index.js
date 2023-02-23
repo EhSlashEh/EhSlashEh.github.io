@@ -1,8 +1,8 @@
+/* Header button */
+
 function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
 }
-
-
 
 var coll = document.getElementsByClassName("hamburger-menu");
 var i;
@@ -19,3 +19,14 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 }
+
+
+/* Contact Submit button shake */
+const myButton = document.getElementById("myButton");
+
+myButton.addEventListener("click", function () {
+    myButton.classList.add("contact-submit-button-active");
+    setTimeout(function () {
+        myButton.classList.remove("contact-submit-button-active");
+    }, 500);
+});
