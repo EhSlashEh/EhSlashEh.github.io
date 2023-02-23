@@ -188,12 +188,12 @@ section {
     margin: 1em;
     padding: 0.4em;
     background-color: rgba(255, 255, 255, 0.7);
-    width: 400px;
+    max-width: 400px;
 }
 
 .experience-img-container {
     display: flex;
-    height: 200px;
+    min-height: 200px;
     background-color: white;
     align-items: center;
     border: 4px groove rgba(128, 128, 128, 0.5);
@@ -214,7 +214,7 @@ a .experience-img:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 230px;
+    min-height: 230px;
 }
 
 .experience-title {
