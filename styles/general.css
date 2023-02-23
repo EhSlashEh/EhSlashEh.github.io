@@ -273,9 +273,9 @@ a .project-img:hover {
 }
 
 .skills-content-card {
-    border: 1px solid var(--color-black);
+    border: 4px groove var(--color1);
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.65);
     flex-shrink: 0;
     flex: 1 1 30%;
     font-size: calc(10px + 1.5vw);
@@ -336,7 +336,7 @@ a .project-img:hover {
 
 .contact-submit-button {
     background-color: #99CCFF;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 8px;
     color: black;
     padding: 15px;
@@ -393,6 +393,23 @@ a .project-img:hover {
         text-decoration: none;
         color: rgb(248,240,251);
     }
+
+.footer-icon-resume {
+    position: relative;
+    display: inline-block;
+}
+
+.icon-resume-text {
+    position: absolute;
+    transform: translate(-30%, -24px);
+    display: none;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.footer-icon-resume:hover .icon-resume-text {
+    display: block;
+}
 
 
 
