@@ -56,7 +56,7 @@ h2 {
 section {
     border: solid var(--color-black);
     border-width: 1vw 2vw;
-    border-radius: 50px;
+    border-radius: 100px;
 }
 
 /* Welcome */
@@ -519,14 +519,14 @@ a .project-img:hover {
 }
 @keyframes animate1 {
     0% {
-        opacity: 0;
-        transform: rotate(45deg) translate(15vh,15vh);
+        opacity: 0.4;
+        transform: rotate(45deg) translate(10vh,10vh);
     }
     50% {
         opacity: 1;
     }
     100% {
         opacity: 0;
-        transform: rotate(45deg) translate(25vh, 25vh);
+        transform: rotate(45deg) translate(20vh, 20vh);
     }
 } 
