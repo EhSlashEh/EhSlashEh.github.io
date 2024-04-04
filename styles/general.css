@@ -502,25 +502,36 @@ a .project-img:hover {
 
 
 /*animated scroll arrow*/
-.arrow span {
+.arrow-container {
+    display: inline-block; /* Ensures the container only takes up as much space as needed */
+    position: relative; /* Allows positioning of the arrow spans within the container */
+    width: 20px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+}
+
+.arrow {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 100%;
+    height: 100%;
     border-bottom: 4px solid white;
     border-right: 4px solid white;
     transform: rotate(45deg);
     animation: animate1 2s infinite;
+    position: absolute; /* Position the arrows relative to the container */
 }
-.arrow span:nth-child(2) {
+
+.arrow:nth-child(2) {
     animation-delay: -0.2s;
 }
-.arrow span:nth-child(3) {
+
+.arrow:nth-child(3) {
     animation-delay: -0.4s;
 }
+
 @keyframes animate1 {
     0% {
         opacity: 0.4;
-        transform: rotate(45deg) translate(10vh,10vh);
+        transform: rotate(45deg) translate(10vh, 10vh);
     }
     50% {
         opacity: 1;
@@ -529,4 +540,4 @@ a .project-img:hover {
         opacity: 0;
         transform: rotate(45deg) translate(20vh, 20vh);
     }
-} 
+}
