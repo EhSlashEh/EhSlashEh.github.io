@@ -27,8 +27,9 @@ h1 {
     text-align: center;
     color: var(--color-black);
     padding-bottom: 16px;
-    text-shadow: 0 0 8px #fff, 0 0 16px #fff, 0 0 24px #fff, 0 0 32px #6DDEE0, 0 0 40px #6DDEE0, 0 0 48px #6DDEE0; /* set the text shadow */
-    animation: neon-animation 1.5s ease-in-out infinite alternate; /* animate the glow effect */
+    /* text-shadow: 0 0 8px #fff, 0 0 16px #fff, 0 0 24px #fff, 0 0 32px #6DDEE0, 0 0 40px #6DDEE0, 0 0 48px #6DDEE0;*/
+    /* text-shadow: 0 0 8px #D2691E, 0 0 16px #D2691E, 0 0 24px #D2691E, 0 0 32px #6DDEE0, 0 0 40px #6DDEE0, 0 0 48px #6DDEE0;  set the text shadow to brown (#D2691E) */
+    /* animation: neon-animation 1.5s ease-in-out infinite alternate; animate the glow effect */
 }
 
 @media (max-width: 600px) {
