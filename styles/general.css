@@ -27,9 +27,6 @@ h1 {
     text-align: center;
     color: var(--color-black);
     padding-bottom: 16px;
-    /* text-shadow: 0 0 8px #fff, 0 0 16px #fff, 0 0 24px #fff, 0 0 32px #6DDEE0, 0 0 40px #6DDEE0, 0 0 48px #6DDEE0;*/
-    /* text-shadow: 0 0 8px #D2691E, 0 0 16px #D2691E, 0 0 24px #D2691E, 0 0 32px #6DDEE0, 0 0 40px #6DDEE0, 0 0 48px #6DDEE0;  set the text shadow to brown (#D2691E) */
-    /* animation: neon-animation 1.5s ease-in-out infinite alternate; animate the glow effect */
 }
 
 @media (max-width: 600px) {
@@ -102,9 +99,6 @@ section {
     border-top-width: 8px;
 }
 
-.about-me-intro {
-}
-
 .about-me-content {
     display: flex;
     flex-direction: row;
@@ -157,9 +151,6 @@ section {
         margin: 0 auto 1vh auto;
         max-width: none;
     }
-
-    .about-me-text {
-    }
 }
 
 /* Experience */
@@ -171,9 +162,6 @@ section {
     padding-top: 60px; /* add padding to compensate for header */
     align-content: center;
     padding-bottom: 40px;
-}
-
-.experience-intro {
 }
 
 .experience-content {
@@ -241,9 +229,6 @@ a .experience-img:hover {
     flex-direction: column;
     background-color: var(--color2);
     padding-top: 60px; /* add padding to compensate for header */
-}
-
-.projects-intro {
 }
 
 .projects-done-grid {
@@ -314,9 +299,6 @@ a .project-img:hover {
     margin-top: auto;
 }
 
-.project-more-to-come {
-}
-
 /* projects resize based on screen width */
 @media (max-width: 700px) {
     .projects-done-grid {
@@ -345,9 +327,6 @@ a .project-img:hover {
     padding: 40px 0;
 }
 
-.skills-section-intro {
-}
-
 .skills-content {
     display: flex;
     align-items: stretch;
@@ -368,6 +347,7 @@ a .project-img:hover {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    text-align: center;  /* Ensure text is centered inside the card */
 }
 
 /* Education */
@@ -379,9 +359,6 @@ a .project-img:hover {
     padding-top: 60px;
     align-content: center;
     padding-bottom: 40px;
-}
-
-.education-intro {
 }
 
 .education-content {
@@ -397,18 +374,19 @@ a .project-img:hover {
     margin: 1em;
     padding: 0.4em;
     background-color: rgba(255, 255, 255, 0.7);
-    max-width: 400px;
+    width: 400px;
 }
 
 .education-img-container {
     display: flex;
-    min-height: 200px;
+    min-height: 100px;
     background-color: white;
     align-items: center;
     border: 4px groove rgba(128, 128, 128, 0.5);
 }
 
 .education-img-container img {
+    object-fit: cover;
     width: 100%;
     align-self: center;
 }
@@ -423,7 +401,7 @@ a .education-img:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 230px;
+    min-height: 130px;
 }
 
 .education-title {
@@ -450,9 +428,6 @@ a .education-img:hover {
     flex-direction: column;
     padding: 40px 0;
     border-bottom-width: 8px;
-}
-
-.contact-section-intro {
 }
 
 .contact-form {
@@ -536,7 +511,6 @@ a .education-img:hover {
     background-color: var(--color-black);
     color: white;
     height: 8vh;
-    padding: 50px;
     font-size: 1.6em;
     z-index: 2;
     border: 0;
