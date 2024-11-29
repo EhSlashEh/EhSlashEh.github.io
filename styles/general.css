@@ -35,16 +35,6 @@ h1 {
     }
 }
 
-@keyframes neon-animation {
-    from {
-        text-shadow: 0 0 8px #fff, 0 0 16px #fff, 0 0 24px #fff, 0 0 32px #6DDEE0, 0 0 40px #6DDEE0, 0 0 48px #6DDEE0; /* set the text shadow */
-    }
-
-    to {
-        text-shadow: 0 0 16px #fff, 0 0 24px #fff, 0 0 32px #fff, 0 0 40px #6DDEE0, 0 0 48px #6DDEE0, 0 0 56px #6DDEE0;
-    }
-}
-
 h2 {
     color: rgb(60,60,60);
     font-size: 1em;
@@ -153,77 +143,16 @@ section {
     }
 }
 
-/* Experience */
-.experience-done-section {
+/* Section (Experience & Education) */
+.experience-section {
     text-align: center;
     display: flex;
     flex-direction: column;
     background-color: var(--color1);
     padding-top: 60px; /* add padding to compensate for header */
-    align-content: center;
-    padding-bottom: 40px;
 }
 
-.experience-content {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: center;
-}
-
-.experience-preview {
-    border: 5px groove var(--color-black);
-    border-radius: 5px;
-    margin: 1em;
-    padding: 0.4em;
-    background-color: rgba(255, 255, 255, 0.7);
-    max-width: 400px;
-}
-
-.experience-img-container {
-    display: flex;
-    min-height: 200px;
-    background-color: white;
-    align-items: center;
-    border: 4px groove rgba(128, 128, 128, 0.5);
-}
-
-.experience-img-container img {
-    width: 100%;
-    align-self: center;
-}
-
-a .experience-img:hover {
-    transform: scale(1.015);
-    transition-duration: 0.12s;
-}
-
-.experience-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 230px;
-}
-
-.experience-title {
-    margin-top: 10px;
-    font-weight: 600;
-    font-size: 1.5em;
-}
-
-.experience-description {
-    text-align: start;
-    margin: 12px 6px 14px 6px;
-    font-size: 1.1em;
-}
-
-.experience-time {
-    margin-top: auto;
-}
-
-/* Projects */
-.projects-done-section {
+.education-section {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -231,7 +160,99 @@ a .experience-img:hover {
     padding-top: 60px; /* add padding to compensate for header */
 }
 
-.projects-done-grid {
+.section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.5em;
+    row-gap: 1em;
+    flex: 1;
+    padding: 0 2em 2em 2em;
+}
+
+.section-preview {
+    border: 5px groove var(--color-black);
+    border-radius: 5px;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 0.4em;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow: auto;
+    white-space: normal;
+    color: black;
+}
+
+.section-img-container {
+    display: flex;
+    min-height: 200px;
+    background-color: white;
+    align-items: center;
+    border: 4px groove rgba(128, 128, 128, 0.5);
+}
+
+.section-img-container img {
+    width: 100%;
+    align-self: center;
+}
+
+a .section-img:hover {
+    transform: scale(1.015);
+    transition-duration: 0.12s;
+}
+
+.section-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 230px;
+}
+
+.section-title {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.section-description {
+    text-align: start;
+    margin: 12px 6px 14px 6px;
+    font-size: 1.1em;
+}
+
+.section-time {
+    margin-top: auto;
+}
+
+/* experience/education resize based on screen width */
+@media (max-width: 700px) {
+    .section-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1399px) {
+    .section-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1400px) {
+    .section-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Projects */
+.projects-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color2);
+    padding-top: 60px; /* add padding to compensate for header */
+}
+
+.projects-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 0.5em;
@@ -301,19 +322,19 @@ a .project-img:hover {
 
 /* projects resize based on screen width */
 @media (max-width: 700px) {
-    .projects-done-grid {
+    .projects-grid {
         grid-template-columns: 1fr;
     }
 }
 
 @media (min-width: 701px) and (max-width: 1399px) {
-    .projects-done-grid {
+    .projects-grid {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (min-width: 1400px) {
-    .projects-done-grid {
+    .projects-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
@@ -342,84 +363,12 @@ a .project-img:hover {
     background-color: rgba(255, 255, 255, 0.65);
     flex-shrink: 0;
     flex: 1 1 30%;
-    font-size: calc(10px + 1.5vw);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     text-align: center;  /* Ensure text is centered inside the card */
 }
-
-/* Education */
-.education-section {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color2);
-    padding-top: 60px;
-    align-content: center;
-    padding-bottom: 40px;
-}
-
-.education-content {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: center;
-}
-
-.education-preview {
-    border: 5px groove var(--color-black);
-    border-radius: 5px;
-    margin: 1em;
-    padding: 0.4em;
-    background-color: rgba(255, 255, 255, 0.7);
-    width: 400px;
-}
-
-.education-img-container {
-    display: flex;
-    min-height: 100px;
-    background-color: white;
-    align-items: center;
-    border: 4px groove rgba(128, 128, 128, 0.5);
-}
-
-.education-img-container img {
-    object-fit: cover;
-    width: 100%;
-    align-self: center;
-}
-
-a .education-img:hover {
-    transform: scale(1.015);
-    transition-duration: 0.12s;
-}
-
-.education-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 130px;
-}
-
-.education-title {
-    margin-top: 10px;
-    font-weight: 600;
-    font-size: 1.5em;
-}
-
-.education-description {
-    text-align: start;
-    margin: 12px 6px 14px 6px;
-    font-size: 1.1em;
-}
-
-.education-time {
-    margin-top: auto;
-}
-
 
 /* Contact me */
 .contact-section {
