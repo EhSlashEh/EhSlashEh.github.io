@@ -192,7 +192,7 @@ section {
 
 .section-img-container img {
     width: 100%;
-    align-self: center;
+    align-self: center;    
 }
 
 a .section-img:hover {
@@ -367,12 +367,29 @@ a .project-img:hover {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    text-align: center;  /* Ensure text is centered inside the card */
+    text-align: center;
+}
+
+/* Elevator Pitch */
+.pitch-section {
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.pitch-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 20px 20px 20px;
+    gap: 10px;
 }
 
 /* Contact me */
 .contact-section {
-    background-color: var(--color1);
+    background-color: var(--color2);
     display: flex;
     flex-direction: column;
     padding: 40px 0;
