@@ -180,12 +180,14 @@ section {
     overflow: auto;
     white-space: normal;
     color: black;
+    object-fit: contain; /* Ensures images maintain aspect ratio and fit inside the container */
 }
 
 .section-img-container {
     display: flex;
     min-height: 200px;
     background-color: white;
+    height: 100%; /* Allow the container to fill the parent's height */
     align-items: center;
     border: 4px groove rgba(128, 128, 128, 0.5);
 }
@@ -195,7 +197,7 @@ section {
     align-self: center;    
 }
 
-a .section-img:hover {
+a .section-img-container:hover {
     transform: scale(1.015);
     transition-duration: 0.12s;
 }
