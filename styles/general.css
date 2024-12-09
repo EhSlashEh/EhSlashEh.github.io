@@ -187,19 +187,14 @@ section {
     display: flex;
     min-height: 200px;
     background-color: white;
-    height: 100%; /* Allow the container to fill the parent's height */
     align-items: center;
     border: 4px groove rgba(128, 128, 128, 0.5);
+    overflow: hidden;
 }
 
 .section-img-container img {
     width: 100%;
-    align-self: center;    
-}
-
-a .section-img-container:hover {
-    transform: scale(1.015);
-    transition-duration: 0.12s;
+    align-self: center;
 }
 
 .section-info {
@@ -207,7 +202,7 @@ a .section-img-container:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 230px;
+    height: 100%;
 }
 
 .section-title {
@@ -303,7 +298,7 @@ a .project-img:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 200px;
+    height: 100%;
 }
 
 .project-title {
