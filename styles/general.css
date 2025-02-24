@@ -287,6 +287,18 @@ section {
     gap: 10px;
 }
 
+.pitch-content iframe {
+    border: 8px solid var(--color2); /* Use your theme color */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.pitch-content iframe:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
+}
+
 /* ======================
    Contact Section
 ====================== */
